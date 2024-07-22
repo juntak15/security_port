@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+/* body {
+  background-image: url("https://townsquare.media/site/366/files/2021/08/attachment-judas-priest-2.jpeg");
+  background-repeat: no-repeat;
+  min-height: 1080px; 
+  !important;
+  background-size: 100% !important;
+} */
+
+.port-img {
+  width:85%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+h1,
+title {
+  color: rgb(255, 0, 0);
+  text-transform: uppercase;
+  text-align: left;
+}
+body {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+
+/* 
+img {
+  width: 7vw;
+  background-color: red;
+} */
+
+
+
+.brand-title {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  margin: 0.5rem;
+}
+
+.navbar {
+  background-color: aqua;
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.navbar-links li:hover {
+  background-color: #444;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* tour dates */
+.boxes {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tours {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  width: 600px;
+  padding-bottom: 2rem;
+}
+
+.tour-box {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: rgb(198, 26, 26);
+  padding-bottom: 4rem;
+}
+
+.city {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 2px;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tour-text {
+  display: inline-block;
+  font-weight: 100;
+  text-align: left;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.btn {
+  margin-top: 2rem;
+  align: center;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: rgb(191, 175, 0);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 1.5rem 5rem;
+}
+
+.btn:hover {
+  background: green;
+  letter-spacing: 0.1rem;
+}
+
+/* @media (max-width: 500px) {
+  h1 {
+    font-size: 0.5rem;
+    padding: 4% 8%;
+  }
+} */
